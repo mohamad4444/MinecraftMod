@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "extrazombies",
+	"version": "${version}",
+	"name": "extraZombies",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/extrazombies/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mohamad4444.extrazombies.ExtraZombies"
+		],
+		"client": [
+			"com.mohamad4444.extrazombies.ExtraZombiesClient"
+		],
+		"fabric-datagen": [
+			"com.mohamad4444.extrazombies.ExtraZombiesDataGenerator"
+		]
+	},
+	"mixins": [
+		"extrazombies.mixins.json",
+		{
+			"config": "extrazombies.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
