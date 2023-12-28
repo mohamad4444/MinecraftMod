@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"com.example.extrazombie.ExtraZombie"
+		],
+		"client": [
+			"com.example.extrazombie.ExtraZombieClient"
 		]
 	},
 	"mixins": [
@@ -30,5 +33,6 @@
 	},
 	"suggests": {
 		"another-mod": "*"
-	}
+	},
+
 }
