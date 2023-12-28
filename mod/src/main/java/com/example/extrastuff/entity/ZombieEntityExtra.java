@@ -1,4 +1,4 @@
-package com.example.extrazombie.entity;
+package com.example.extrastuff.entity;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.ZombieEntity;
