@@ -1,4 +1,4 @@
-package com.mohamad4444.extrazombies.mixin;
+package com.example.extrazombie.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
