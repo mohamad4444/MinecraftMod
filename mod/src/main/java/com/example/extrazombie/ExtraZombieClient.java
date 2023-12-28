@@ -15,7 +15,7 @@ import net.minecraft.util.Identifier;
 @Environment(EnvType.CLIENT)
 public class ExtraZombieClient implements ClientModInitializer {
 
-	public static final EntityModelLayer  MODEL_CUBE_LAYER = new EntityModelLayer(new Identifier("entitytesting", "cube"), "main");
+	public static final EntityModelLayer  MODEL_CUBE_LAYER = new EntityModelLayer(new Identifier("extrazombie", "diamondzombie"), "main");
 	@Override
 	public void onInitializeClient() {
 		/*

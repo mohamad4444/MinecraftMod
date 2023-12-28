@@ -20,7 +20,7 @@ public class ZombieEntityExtraRenderer extends MobEntityRenderer<ZombieEntityExt
 
     @Override
     public Identifier getTexture(ZombieEntityExtra entity) {
-        return new Identifier("entitytesting", "textures/entity/cube/cube.png");
+        return new Identifier("extrazombie", "textures/entity/zombie/zombie_diamond");
 
     }
 
