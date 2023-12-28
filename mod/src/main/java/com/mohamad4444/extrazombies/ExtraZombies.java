@@ -18,5 +18,6 @@ public class ExtraZombies implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Hello Fabric worl2222!");
 	}
 }

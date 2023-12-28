@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Check Repository') {
+            
+            steps {
+                
+                script {
+                    def directoryExists = fileExists('MinecraftMod')
+                    if (!directoryExists) {
+                        echo "Directory MinecraftMod doesn't exist, cloning repository..."
+                        git branch: 'main', url: 'https://github.com/mohamad4444/MinecraftMod.git'
+                    } else {
+                        echo "Directory MinecraftMod exists, pulling changes..."
+                        dir('MinecraftMod') {
+                            sh 'git pull origin main' // Use 'origin main' if 'main' is the branch
+                        }
+                    }
+                }
+            }
+        }
+        stage('Build The Project') {
+            steps {
+                echo "ls before mod"
+                sh 'ls -l' 
+                echo "ls in mod"
+                dir('mod') {
+                    sh 'ls -l' 
+                    sh 'chmod +x ./gradlew'
+                    sh './gradlew build'
+                    archiveArtifacts '**/build/libs/*.jar'
+                }
+            }
+        }
+    }
+}
