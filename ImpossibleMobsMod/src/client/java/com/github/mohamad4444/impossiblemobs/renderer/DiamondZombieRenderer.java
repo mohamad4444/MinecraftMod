@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 
 @Environment(EnvType.CLIENT)
 public class DiamondZombieRenderer extends ZombieEntityRenderer{
-    private static final Identifier TEXTURE = new Identifier("extrastuff", "textures/mobs/zombie_diamond.png");
+    private static final Identifier TEXTURE = new Identifier("impossiblemobs", "textures/mobs/zombie_diamond.png");
 
     public DiamondZombieRenderer(EntityRendererFactory.Context context) {
         super(context);
