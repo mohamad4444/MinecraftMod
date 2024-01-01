@@ -1,4 +1,4 @@
-package com.example.extrastuff.entity;
+package com.github.mohamad4444.impossiblemobs.entity;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
@@ -17,11 +17,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
 
-public class DiamondZombie extends ZombieEntity {
+public class DiamondZombieEntity extends ZombieEntity {
     public static final Identifier ZOMBIE_MOB_ID = new Identifier("extrastuff", "diamondzombie");
 
 
-    public DiamondZombie(EntityType<? extends DiamondZombie> entityType, World world) {
+    public DiamondZombieEntity(EntityType<? extends DiamondZombieEntity> entityType, World world) {
         super(entityType, world);
     }
 

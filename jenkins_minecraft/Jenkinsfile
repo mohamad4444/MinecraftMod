@@ -25,7 +25,7 @@ pipeline {
                 echo "ls before mod"
                 sh 'ls -l' 
                 echo "ls in mod"
-                dir('mod') {
+                dir('ImpossibleMobsMod') {
                     sh 'ls -l' 
                     sh 'chmod +x ./gradlew'
                     sh './gradlew clean build'

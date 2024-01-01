@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "extrastuff",
+	"id": "impossiblemobs",
 	"version": "${version}",
-	"name": "extrastuff",
+	"name": "ImpossibleMobs",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,22 +12,29 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/extraStuff/icon.png",
+	"icon": "assets/impossiblemobs/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.extrastuff.ExtraStuff"
+			"com.github.mohamad4444.impossiblemobs.ImpossibleMobs"
 		],
 		"client": [
-			"com.example.extrastuff.ExtraStuffClient"
+			"com.github.mohamad4444.impossiblemobs.ImpossibleMobsClient"
+		],
+		"fabric-datagen": [
+			"com.github.mohamad4444.impossiblemobs.ImpossibleMobsDataGenerator"
 		]
 	},
 	"mixins": [
-		"extrastuff.mixins.json"
+		"impossiblemobs.mixins.json",
+		{
+			"config": "impossiblemobs.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.15.3",
-		"minecraft": "~1.19.2",
+		"minecraft": "~1.19.4",
 		"java": ">=17",
 		"fabric-api": "*"
 	},

@@ -1,4 +1,4 @@
-package com.example.extrastuff.mixin;
+package com.github.mohamad4444.impossiblemobs.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,6 +1,6 @@
-package com.example.extrastuff.renderer;
+package com.github.mohamad4444.impossiblemobs.renderer;
 
-import com.example.extrastuff.entity.DiamondZombie;
+import com.github.mohamad4444.impossiblemobs.entity.DiamondZombieEntity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.render.entity.EntityRendererFactory;
@@ -24,7 +24,7 @@ public class DiamondZombieRenderer extends ZombieEntityRenderer{
         super.scale(zombieEntity, matrixStack, f);
     }
 
-    public Identifier getTexture(DiamondZombie entity) {
+    public Identifier getTexture(DiamondZombieEntity entity) {
         return TEXTURE;
     }
     @Override
