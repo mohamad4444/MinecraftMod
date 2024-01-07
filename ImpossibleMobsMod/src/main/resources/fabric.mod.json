@@ -22,7 +22,7 @@
 			"com.github.mohamad4444.impossiblemobs.ImpossibleMobsClient"
 		],
 		"fabric-datagen": [
-			"com.github.mohamad4444.impossiblemobs.ImpossibleMobsDataGenerator"
+          "com.github.mohamad4444.impossiblemobs.datagen.ImpossibleMobsDataGenerator"
 		]
 	},
 	"mixins": [

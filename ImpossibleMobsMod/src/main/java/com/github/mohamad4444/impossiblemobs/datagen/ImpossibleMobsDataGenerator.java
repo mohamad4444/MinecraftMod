@@ -1,4 +1,4 @@
-package com.github.mohamad4444.impossiblemobs;
+package com.github.mohamad4444.impossiblemobs.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

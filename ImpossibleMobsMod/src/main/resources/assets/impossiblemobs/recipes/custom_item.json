@@ -1,6 +1,21 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "impossiblemobs:item/custom_item"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WR ",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:logs"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "impossiblemobs:custom_item",
+    "count": 4
   }
 }
+
