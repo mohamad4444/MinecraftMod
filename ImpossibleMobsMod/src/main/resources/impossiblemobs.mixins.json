@@ -3,7 +3,9 @@
 	"package": "com.github.mohamad4444.impossiblemobs.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"SpawnHelperMixin",
+		"IncreaseDensityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
